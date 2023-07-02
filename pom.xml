@@ -10,6 +10,8 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>lesson1-context-bean-annotation</module>
+        <module>lesson1-context-stereotype-annotation</module>
+        <module>lesson2-wiring-bean-annotation</module>
     </modules>
 
     <properties>
