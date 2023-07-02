@@ -1,4 +1,4 @@
-#First Wiring Exercise
+# First Wiring Exercise
 
 In this exercise, we learn that how we can create the wiring between two beans.
 
