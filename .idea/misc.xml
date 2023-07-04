@@ -6,6 +6,7 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/lesson2-wiring-bean-annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/m4-lesson2-wiring-autowired-annotation/pom.xml" />
       </list>
     </option>
   </component>
