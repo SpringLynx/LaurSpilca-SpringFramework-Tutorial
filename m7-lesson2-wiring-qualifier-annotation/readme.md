@@ -112,6 +112,10 @@ Check the code sample below and use of the @Qualifier annotation.
 However, the best use case of using the @Qualifier annotation is when you've multiple beans of same type but with 
 some differences in their implementation. Have a look on the following example. 
 
+    public interface PaymentService{
+        Boolean validateCreditCard(String number);
+    }
+    
     @Service("stripePayment")
         public class StripePaymentService implements PaymentService {
         // Stripe-specific implementation
@@ -123,4 +127,36 @@ some differences in their implementation. Have a look on the following example.
     }
 
 And the rest is same. You know how to call a specific bean in any certain scenario.
+
+Above you can see that we used the stereotype annotation to name the bean. But we can use the @Qualifier annotation
+as well to name a bean. So, it can act in two ways. To name a bean. And to specify a bean along with @Autowired.
+
+
+    public interface PaymentService{
+        Boolean validateCreditCard(String number);
+    }
+    
+    @Service
+    @Qualifier("stripePayment")
+        public class StripePaymentService implements PaymentService {
+        // Stripe-specific implementation
+    }
+
+    @service
+    @Qualifier("paypalPayment")
+        public class PaypalPaymentService implements PaymentService {
+        // PayPal-specific implementation
+    }
+
+
+
+And it can be called as follows.
+
+    public void Payment{
+
+    @Autowired
+    @Qualifier("paypalPayment") //To specify the dependency by name.
+    private PaymentService paymentService;    
+
+    }
 

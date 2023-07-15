@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lesson1-context-stereotype-annotation</artifactId>
+    <artifactId>m2-lesson1-context-stereotype-annotation</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

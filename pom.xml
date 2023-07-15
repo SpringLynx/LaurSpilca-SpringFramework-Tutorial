@@ -16,6 +16,7 @@
         <module>m5-lesson2-wiring-autowired-setter-injection</module>
         <module>m6-lesson2-wiring-autowired-constructor-injection</module>
         <module>m7-lesson2-wiring-qualifier-annotation</module>
+        <module>m8-lesson3-database-connect</module>
     </modules>
    <!-- <dependencies>
         <dependency>
